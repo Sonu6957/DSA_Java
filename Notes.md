@@ -1,1 +1,2 @@
-** Use a variable in the arguments to pass value in the recusion call. See example - Reduce_No.java.**
+## Use a variable in the arguments to pass value in the recusion call. See example - Reduce_No.java.##
+## During function call in recursion, the same object of the argument is passed to each recursion function.###
