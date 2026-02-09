@@ -3,8 +3,10 @@
     An integer n is a power of two, if there exists an integer x such that n == 2^x.
     
     Approach :- Recursion
-    Time :- 
-    Space :- 
+    Time :- O(log n)
+    Space :-  O(log n)
+
+    This can be extended to check power of any number.
 */
 public class Power_Of_Two {
     public static void main(String[] args){
