@@ -1,2 +1,2 @@
 ### Doing linear operations(traversing) can be done using recursion by adding "index" as an argument in the recursive function. This index keeps incrementing in the each recursive calls.###
-###  
+###  When there is a requirement where the array to be considered is decreasing bit by bit from the end. Use the concept of r and c. It means, initially, r = arr.length while c starts from 0 until it reaches r.(During this period do your operation ). Once it reaches r, decrease the r and reset c to 0. This is similar to reverse triangle concept.###
