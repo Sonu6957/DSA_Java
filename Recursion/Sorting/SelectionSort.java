@@ -1,3 +1,11 @@
+/* Problem :- 
+    Sort the array using Selection Sort in recursion.
+    
+    Approach :- Recursion
+    Time :- O(n)
+    Space :-  O(n)
+
+*/
 package Sorting;
 
 import java.util.Arrays;
@@ -5,22 +13,24 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
        int[] arr = new int[]{2,5,3,7,1};
-        System.out.println(Arrays.toString(selectionSortRec(arr,arr.length-1,0,arr[0]))); 
+        System.out.println(Arrays.toString(selectionSortRec(arr,arr.length-1,0,0))); 
     }
-    static int[] selectionSortRec(int[] arr, int traverselength,int currentIndex,int max){
+    static int[] selectionSortRec(int[] arr, int traverselength,int currentIndex,int maxIndex){
         if(traverselength  == 0){
             return arr;
         }
-        if(currentIndex<traverselength){
-            if(max <= arr[currentIndex]){
-                max = arr[currentIndex];
+        if(currentIndex<=traverselength){
+            if(arr[maxIndex] < arr[currentIndex]){
+                maxIndex = currentIndex;
             }
-            return selectionSortRec(arr, traverselength, currentIndex+1,max);
+            return selectionSortRec(arr, traverselength, currentIndex+1,maxIndex);
         }
         else{
-            arr[traverselength]=max;
-            max = arr[0];
-           return selectionSortRec(arr, traverselength -1 , 0,max);
+            int temp = arr[maxIndex];
+            arr[maxIndex]=arr[traverselength];
+            arr[traverselength]=temp;
+            
+           return selectionSortRec(arr, traverselength-1 , 0,0);
            
         }
     }
