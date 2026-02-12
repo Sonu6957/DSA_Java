@@ -1,3 +1,12 @@
+/* Problem :- 
+    Given a array of characters(String), return the array without a given character.
+    Here in this case the character is 'a'.
+    
+    Approach :- Recursion
+    Time :- O(n)
+    Space :-  O(n)
+
+*/
 
 
 public class RemovalofCharacter{

@@ -1,4 +1,11 @@
 
+/* Problem :- 
+    Given a array of characters(String), return the subsequence of the string.
+    Approach :- Recursion
+    Time :- O(2^n.n)
+    Space :-  O(n)
+
+*/
 import java.util.ArrayList;
 
 public class Subseq{
