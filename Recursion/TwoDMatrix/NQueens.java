@@ -2,7 +2,7 @@
     Given a chess board with n * n squares, place N queens safely.
     
     Approach :- Recursion
-    Time :- O(n*n)
+    Time :- O(n!)
     Space :-  O(n*n)
 
 */
