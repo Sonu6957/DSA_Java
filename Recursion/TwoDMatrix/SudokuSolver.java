@@ -17,10 +17,12 @@ public class SudokuSolver {
         
     }
     static void sudokuSolverMatrix(int[][] board,int r, int c){
+        //Base Condition
         if(r==board.length){
             display(board);
             return;
         }
+        
         if(c==board[0].length){
             sudokuSolverMatrix(board, r+1, 0);
             return;
