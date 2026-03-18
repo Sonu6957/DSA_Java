@@ -1,32 +1,25 @@
 package OOPS.ExamplesOfOops;
 public class ProducerClass {
-    int wheel;
-    int steering;
-    String color;
-    static int value;
-    public ProducerClass(int wheel,int steering,String color){
-        this.wheel = wheel;
-        this.steering = steering;
-        this.color = color;
-        ProducerClass.value++;
+    int Integer1;
+    String String1;
+    boolean Boolean1;
+    static int incrementValue1 = 5;
+    public ProducerClass(int Integer1, String String1, boolean Boolean1){
+        this.Integer1 = Integer1;
+        this.String1 = String1;
+        this.Boolean1 = Boolean1;
+        ProducerClass.incrementValue1++;
     }
-    public static  void main(String[] args) {
-        //Use of static
-        int a = 10;
-        System.out.println("The value of a is "+a);
+    public ProducerClass(){
+        this.Integer1 = 1;
+        this.String1 = "Default String1";
+        this.Boolean1 = true;
     }
-    public void display(){
-        System.out.println("The no. of wheel is "+wheel);
-        System.out.println("The colour is "+color);
+    void producerfunction(){
+        System.out.println("Producer function run");
     }
-    public void displayValue(){
-        System.out.println("The value is "+ProducerClass.value);
-     
-    }
-    public void incrementValue(int value){
-        ProducerClass.value = value + 1;
-        System.out.println("The value is "+ProducerClass.value);
-    }
+    
+    
 
 
 

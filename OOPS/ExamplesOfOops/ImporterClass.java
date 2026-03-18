@@ -1,12 +1,22 @@
 package OOPS.ExamplesOfOops;
-public class ImporterClass {
+public class ImporterClass extends ProducerClass{
+    int Integer2 = 2;
+    String String2 = "String2";
+    boolean Boolean2 = true;
     
-    public static void main(String[] args) {
-        ProducerClass pc = new ProducerClass(2,0,"blue");
-        ProducerClass pc1 = new ProducerClass(4,0,"red");
-        
-       System.out.println(pc.value);
-       System.out.println(pc1.value);
+    ImporterClass(){
+        super(2,"String2",true);
     }
+    void importerfunction(){
+        System.out.println("Importer function run");
+        super.producerfunction();
+    }
+    
+    void commonFunction(){
+        System.out.println("Common Function in Importer Class");
+    }
+    
+    
+    
     
 }
